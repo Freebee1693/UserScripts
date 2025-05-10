@@ -1,17 +1,15 @@
 // ==UserScript==
 // @name        Codenames AI Assistant
-// @namespace   https://flawcra.cc/
+// @namespace   Freebee1693
 // @match       https://codenames.game/*
 // @grant       GM_addStyle
 // @grant       GM_setValue
 // @grant       GM_getValue
-// @version     1.2.1-GitHub
-// @author      FlawCra
+// @version     1.2.2-GitHub
+// @author      Freebee1693
 // @license     Apache License 2.0
 // @icon        https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://codenames.game&size=256
 // @description A script that uses AI to assist with both guessing words and generating hints for Codenames
-// @downloadURL https://update.greasyfork.org/scripts/489439/Codenames%20AI%20Assistant.user.js
-// @updateURL https://update.greasyfork.org/scripts/489439/Codenames%20AI%20Assistant.meta.js
 // ==/UserScript==
 
 // API URL
