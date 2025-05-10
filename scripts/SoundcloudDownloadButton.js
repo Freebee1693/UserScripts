@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Soundcloud Download Button
 // @namespace    Freebee1693
-// @version      1.0.8-GitHub
+// @version      1.0.9-GitHub
 // @description  A Script that adds a Download button to SoundCloud
 // @author       Freebee1693
 // @license      Apache License 2.0
@@ -19,6 +19,10 @@
     }, 5000);
   }
 
+  function getCompareString() {
+    return `soundcloud.com${location.pathname}`;
+  }
+
   setInterval(() => {
     const re1 = new RegExp('(.*)soundcloud.com/(.*)/(.*)');
     const re2 = new RegExp('(.*)soundcloud.com/(.*)/sets/(.*)');
@@ -29,7 +33,7 @@
     btnElem.setAttribute("class", "sc-button-download sc-button sc-button-medium sc-button-responsive");
     btnElem.setAttribute("aria-describedby", "tooltip-122");
     btnElem.setAttribute("tabindex", "0");
-    if (re2.test(location.href)) {
+    if (re2.test(getCompareString())) {
       btnElem.setAttribute("title", "Download Playlist");
       btnElem.setAttribute("aria-label", "Download Playlist");
       btnElem.innerText = "Download Playlist";
@@ -64,8 +68,8 @@
             break;
         }
       }, 333);
-      if (re2.test(location.href)) {
-        const tmp = re2.exec(location.href);
+      if (re2.test(getCompareString())) {
+        const tmp = re2.exec(getCompareString());
         const url = "https://api.modlabs.cc/scr/" + tmp[2] + "/sets/" + tmp[3];
         fetch(url).then(function (t) {
           downdone();
@@ -76,8 +80,8 @@
             a.click();
           });
         });
-      } else if (re1.test(location.href)) {
-        const tmp = re1.exec(location.href);
+      } else if (re1.test(getCompareString())) {
+        const tmp = re1.exec(getCompareString());
         const url = "https://api.modlabs.cc/scr/" + tmp[2] + "/" + tmp[3];
         fetch(url).then(function (t) {
           downdone();
