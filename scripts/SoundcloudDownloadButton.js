@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Soundcloud Download Button
-// @namespace    https://flawcra.cc/
+// @namespace    Freebee1693
 // @version      1.0.7-GitHub
 // @description  A Script that adds a Download button to SoundCloud
-// @author       FlawCra
+// @author       Freebee1693
 // @license      Apache License 2.0
 // @match        https://soundcloud.com/*/*
 // @grant        none
@@ -66,7 +66,7 @@
       }, 333);
       if (re2.test(location.href)) {
         const tmp = re2.exec(location.href);
-        const url = "https://scr.flawcra.cc/" + tmp[2] + "/sets/" + tmp[3];
+        const url = "https://api.modlabs.cc/scr/" + tmp[2] + "/sets/" + tmp[3];
         fetch(url).then(function (t) {
           downdone();
           return t.blob().then((b) => {
@@ -78,7 +78,7 @@
         });
       } else if (re1.test(location.href)) {
         const tmp = re1.exec(location.href);
-        const url = "https://scr.flawcra.cc/" + tmp[2] + "/" + tmp[3];
+        const url = "https://api.modlabs.cc/scr/" + tmp[2] + "/" + tmp[3];
         fetch(url).then(function (t) {
           downdone();
           return t.blob().then((b) => {
