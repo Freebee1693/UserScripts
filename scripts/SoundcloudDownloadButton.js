@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Soundcloud Download Button
 // @namespace    Freebee1693
-// @version      1.0.7-GitHub
+// @version      1.0.8-GitHub
 // @description  A Script that adds a Download button to SoundCloud
 // @author       Freebee1693
 // @license      Apache License 2.0
