@@ -3,7 +3,7 @@
 // @namespace   Freebee1693
 // @match       https://songl.io/*
 // @grant       none
-// @version     1.0.0
+// @version     1.0.0-GitHub
 // @author      Freebee1693
 // @license     Apache License 2.0
 // @description A script to prevent funny people from spamming with their player player names.
