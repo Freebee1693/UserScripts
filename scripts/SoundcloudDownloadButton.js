@@ -5,7 +5,7 @@
 // @description  A Script that adds a Download button to SoundCloud
 // @author       Freebee1693
 // @license      Apache License 2.0
-// @match        https://soundcloud.com/*/*
+// @match        https://soundcloud.com/*
 // @grant        none
 // ==/UserScript==
 
